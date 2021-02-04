@@ -1,0 +1,102 @@
+body,
+html {
+  height: 100%;
+}
+
+#article {
+  color: rgba(250, 236, 236);
+  margin: 0 auto;
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#prom {
+  margin: 0 auto;
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 5px 5px;
+  border-radius: 7px;
+  background-color: rgba(93, 84, 163);
+  box-sizing: border-box;
+  margin-top: 80px;
+  text-align: center;
+  border-style: none;
+  box-shadow: 1px 10px rgb(218, 104, 104);
+  color: rgba(255, 255, 255);
+}
+
+/* This is the contact form */
+
+form {
+  margin: 0 auto;
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255);
+  box-sizing: border-box;
+  margin-top: 50px;
+  text-align: center;
+  border-style: none;
+  box-shadow: 1px 10px rgb(218, 104, 104);
+}
+input,
+select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: rgb(211, 210, 210);
+}
+
+form h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-family: monospace;
+}
+
+.terms {
+  color: rgb(150, 147, 147);
+  font-size: 8px;
+  font-family: monospace;
+}
+
+.terms a {
+  color: rgb(255, 121, 120);
+  font-size: 8px;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+#button {
+  background-color: rgb(119, 226, 180);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
