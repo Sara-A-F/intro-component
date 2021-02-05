@@ -1,6 +1,8 @@
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* for other browsers*/
+  -moz-box-sizing: border-box; /* for other browsers*/
 }
 
 body,
@@ -58,7 +60,7 @@ h1 {
   color: rgba(255, 255, 255);
 }
 
-/* This is the contact form */
+/* This is the contact form box */
 
 form {
   margin: 0 auto;
@@ -73,8 +75,9 @@ form {
   box-shadow: 0px 10px rgb(218, 104, 104);
 }
 
-input,
-select {
+/* This is the contact form fields */
+
+input {
   width: 100%;
   margin-bottom: 20px;
   padding: 9px;
@@ -85,12 +88,10 @@ select {
   border-color: rgb(211, 210, 210);
 }
 
-form h2 {
-  color: #fff;
-  font-size: 40px;
-  margin-bottom: 20px;
-  display: inline-block;
+/*input:required:invalid {
+  border: 2px solid red;
 }
+*/
 
 .terms {
   color: rgb(150, 147, 147);
@@ -111,9 +112,9 @@ form h2 {
   border-radius: 5px;
   width: 100%;
   font-family: monospace;
-  font-weight: bold;
+  font-weight: none;
   font-size: 1em;
-  box-shadow: 0px 5px rgb(137, 212, 180);
+  box-shadow: 0px 3px rgb(104, 199, 158);
 }
 
 #button:hover {
