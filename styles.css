@@ -1,32 +1,60 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
 }
 
+/* -----------------------------------------------------------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.cajas {
+  margin-top: 15px;
+  vertical-align: bottom;
+}
+
+/* -----------------------------------------------------------------------*/
 #article {
   color: rgba(250, 236, 236);
   margin: 0 auto;
-  width: 450px;
+  width: 30%;
   margin-bottom: 20px;
-  padding: 30px 20px;
+  padding: 100px 50px;
   border-radius: 7px;
   box-sizing: border-box;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 #prom {
   margin: 0 auto;
-  width: 450px;
-  margin-bottom: 20px;
-  padding: 5px 5px;
+  width: 75%;
+  margin-bottom: 30px;
+  padding: 10px 0px;
   border-radius: 7px;
   background-color: rgba(93, 84, 163);
-  box-sizing: border-box;
   margin-top: 80px;
   text-align: center;
   border-style: none;
-  box-shadow: 1px 10px rgb(218, 104, 104);
+  box-shadow: 0px 10px rgb(218, 104, 104);
   color: rgba(255, 255, 255);
 }
 
@@ -34,23 +62,22 @@ html {
 
 form {
   margin: 0 auto;
-  width: 450px;
+  width: 75%;
   margin-bottom: 20px;
-  padding: 30px 20px;
+  padding: 50px 20px;
   border-radius: 7px;
   background-color: rgba(255, 255, 255);
-  box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   border-style: none;
-  box-shadow: 1px 10px rgb(218, 104, 104);
+  box-shadow: 0px 10px rgb(218, 104, 104);
 }
+
 input,
 select {
   width: 100%;
   margin-bottom: 20px;
   padding: 9px;
-  box-sizing: border-box;
   font-size: 17px;
   border-style: solid;
   border-width: 1px;
@@ -63,19 +90,16 @@ form h2 {
   font-size: 40px;
   margin-bottom: 20px;
   display: inline-block;
-  font-family: monospace;
 }
 
 .terms {
   color: rgb(150, 147, 147);
   font-size: 8px;
-  font-family: monospace;
 }
 
 .terms a {
   color: rgb(255, 121, 120);
   font-size: 8px;
-  font-family: monospace;
   text-decoration: none;
 }
 
@@ -89,14 +113,27 @@ form h2 {
   font-family: monospace;
   font-weight: bold;
   font-size: 1em;
+  box-shadow: 0px 5px rgb(137, 212, 180);
 }
 
 #button:hover {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  form {
-    width: 100%;
+/* ---------------------------------------------------------------------------------------- */
+
+/* Responsive layout - makes one column-layout  */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the one columns smaller */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
