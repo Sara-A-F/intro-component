@@ -11,6 +11,7 @@ html {
 }
 /*----------------------- This is the background image ----------------*/
 body {
+  display: grid;
   background-image: url(img/bg-intro-desktop.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +25,9 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 50px;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
 }
 
 .columnRight {
@@ -44,9 +47,9 @@ body {
 #article {
   color: rgba(250, 236, 236);
   margin: 0 auto;
-  width: 75%;
+  width: 100%;
   margin-bottom: 20px;
-  padding: 50px 50px;
+  padding: 150px 50px;
   margin-top: 100px;
   text-align: left;
 }
@@ -78,7 +81,6 @@ form {
   margin: 0 auto;
   width: 75%;
   margin-bottom: 70px;
-  padding: 20px 20px;
   border-radius: 7px;
   background-color: rgba(255, 255, 255);
   margin-top: 20px;
@@ -159,10 +161,14 @@ input {
   width: 100%;
   font-size: 1em;
   box-shadow: 0px 3px rgb(104, 199, 158);
+  text-decoration: none;
 }
 
 #button:hover {
   cursor: pointer;
+  border: none;
+  background-color: rgb(104, 199, 158);
+  text-decoration: none;
 }
 
 /*----------------------- This is the text and link for terms and services----------------*/
