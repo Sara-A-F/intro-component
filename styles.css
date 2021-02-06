@@ -9,15 +9,24 @@ body,
 html {
   height: 100%;
 }
+/*----------------------- This is the background image ----------------*/
+body {
+  background-image: url(img/bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(255, 121, 120);
+  opacity: 3;
+}
 
-/* -----------------------------------------------------------------------*/
+/*----------------------- This are the 2 columns ----------------*/
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 50px;
 }
 
-/* Create four equal columns that sits next to each other */
 .columnRight {
   flex: 50%;
   max-width: 50%;
@@ -30,12 +39,8 @@ html {
   padding: 1 4px;
 }
 
-.cajas {
-  margin-top: 15px;
-  vertical-align: bottom;
-}
+/*----------------------- This is the Text in the Left Column ----------------*/
 
-/* -----------------------------------------------------------------------*/
 #article {
   color: rgba(250, 236, 236);
   margin: 0 auto;
@@ -51,6 +56,8 @@ h1 {
   margin: 0 auto;
 }
 
+/*----------------------- This is the promotion paragraph ----------------*/
+
 #prom {
   margin: 0 auto;
   width: 75%;
@@ -65,7 +72,7 @@ h1 {
   color: rgba(255, 255, 255);
 }
 
-/* This is the contact form box */
+/*----------------------- This is the contact form box----------------*/
 
 form {
   margin: 0 auto;
@@ -80,7 +87,7 @@ form {
   box-shadow: 0px 10px rgb(218, 104, 104);
 }
 
-/* This is the contact form fields */
+/*----------------------- This is the contact form input boxes----------------*/
 
 input {
   width: 100%;
@@ -98,6 +105,24 @@ input {
 }
 */
 
+/*----------------------- This is the submit button----------------*/
+
+#button {
+  background-color: rgb(119, 226, 180);
+  color: #fff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+  box-shadow: 0px 3px rgb(104, 199, 158);
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+/*----------------------- This is the text and link for terms and services----------------*/
 .terms {
   color: rgb(150, 147, 147);
   font-size: 8px;
@@ -109,26 +134,8 @@ input {
   text-decoration: none;
 }
 
-#button {
-  background-color: rgb(119, 226, 180);
-  color: #fff;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  font-family: monospace;
-  font-weight: none;
-  font-size: 1em;
-  box-shadow: 0px 3px rgb(104, 199, 158);
-}
+/* ---------------------------Responsive layout - makes one column-layout----------------------------------------- */
 
-#button:hover {
-  cursor: pointer;
-}
-
-/* ---------------------------------------------------------------------------------------- */
-
-/* Responsive layout - makes one column-layout  */
 @media (max-width: 800px) {
   .columnRight,
   .columnLeft {
