@@ -199,3 +199,9 @@ input {
     max-width: 85%;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.85em;
+  }
+}
