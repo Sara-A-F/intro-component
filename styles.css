@@ -8,6 +8,7 @@
 body,
 html {
   height: 100%;
+  font-size: 1em;
 }
 /*----------------------- This is the background image ----------------*/
 body {
@@ -55,7 +56,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3em;
   margin: 0 auto;
 }
 
